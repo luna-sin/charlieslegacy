@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Charlie's Grill | Southern Food & Catering</title>
+
+  <meta
+    name="description"
+    content="Charlie's Grill in Battleboro, NC — Southern food, BBQ, chicken, seafood, box lunches and catering for businesses, schools, families and community events."
+  />
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:title" content="Charlie's Grill | Southern Food & Catering" />
+  <meta property="og:description" content="Southern food, BBQ, chicken, seafood, box lunches and catering for businesses, schools, families and community events in Battleboro, NC." />
+  <meta property="og:type" content="restaurant.menu" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Charlie's Grill | Southern Food & Catering" />
+  <meta name="twitter:description" content="Southern food, BBQ, chicken, seafood, box lunches and catering in Battleboro, NC." />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍗</text></svg>" />
+
+  <!-- LocalBusiness structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Charlie's Grill",
+    "servesCuisine": "Southern",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5049 Hathaway St",
+      "addressLocality": "Battleboro",
+      "addressRegion": "NC",
+      "postalCode": "27809",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       CHARLIE'S GRILL — CLIENT PREVIEW TEMPLATE
+       Infrared Reactive
+       ========================================================= */
+
+    :root {
+      --primary: #7a2419;
+      --primary-dark: #551710;
+      --cream: #fff8ed;
+      --gold: #d6a84f;
+      --dark: #171411;
+      --brown: #39251d;
+      --light: #f6efe4;
+      --white: #ffffff;
+      --gray: #6e665f;
+      --border: #e4d8ca;
+
+      --max-width: 1180px;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    /* Skip link */
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      background: var(--primary);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 0 0 8px 0;
+      z-index: 2000;
+      font-weight: 800;
+    }
+
+    .skip-link:focus {
+      left: 0;
+      top: 0;
+    }
+
+    /* =========================================================
+       TOP BAR
+       ========================================================= */
+
+    .topbar {
+      background: var(--dark);
+      color: var(--white);
+      padding: 9px 0;
+      font-size: 0.88rem;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* =========================================================
+       NAVIGATION
+       ========================================================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 248, 237, 0.97);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: bold;
+      font-size: 1.45rem;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: var(--gold);
+      border-radius: 50%;
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 25px;
+    }
+
+    nav a {
+      font-size: 0.93rem;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: var(--white) !important;
+      padding: 11px 18px;
+      border-radius: 8px;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .hero {
+      min-height: 650px;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(20, 12, 8, 0.94) 0%,
+          rgba(20, 12, 8, 0.76) 48%,
+          rgba(20, 12, 8, 0.30) 100%
+        ),
+        linear-gradient(135deg, #482016, #a75c30);
+
+      color: var(--white);
+    }
+
+    /*
+      CLIENT PREVIEW:
+      Replace the background above with a real Charlie's Grill
+      food/restaurant photograph when approved.
+
+      Example:
+
+      background:
+        linear-gradient(...),
+        url("images/hero-food.jpg") center/cover;
+    */
+
+    .hero-content {
+      width: min(92%, var(--max-width));
+      margin: auto;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      max-width: 720px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3rem, 6vw, 5.6rem);
+      line-height: 0.98;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 1.15rem;
+      color: #f8eee4;
+      margin-bottom: 35px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.7);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--dark);
+    }
+
+    /* =========================================================
+       SECTION BASICS
+       ========================================================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      line-height: 1.05;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--gray);
+      font-size: 1.05rem;
+    }
+
+    /* =========================================================
+       SERVICES
+       ========================================================= */
+
+    .services {
+      background: var(--white);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-image {
+      height: 220px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-size: 3rem;
+      background: linear-gradient(135deg, var(--primary), #b86d35);
+    }
+
+    .service-content {
+      padding: 25px;
+    }
+
+    .service-content h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.55rem;
+      margin-bottom: 9px;
+    }
+
+    .service-content p {
+      color: var(--gray);
+      margin-bottom: 18px;
+    }
+
+    .text-link {
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    /* =========================================================
+       CATERING MENU
+       ========================================================= */
+
+    .catering-menu {
+      background: var(--cream);
+    }
+
+    .menu-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .menu-tab {
+      border: 2px solid var(--border);
+      background: var(--white);
+      color: var(--dark);
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: 800;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .menu-tab:hover {
+      border-color: var(--primary);
+    }
+
+    .menu-tab.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--white);
+    }
+
+    .menu-category {
+      display: none;
+    }
+
+    .menu-category.active {
+      display: block;
+    }
+
+    .menu-category h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.6rem;
+      margin-bottom: 6px;
+      color: var(--primary);
+    }
+
+    .menu-category .cat-note {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 32px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .menu-item .name {
+      font-weight: 700;
+    }
+
+    .menu-item .price {
+      margin: 0;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 700px) {
+      .menu-items {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================================================
+       MENU HIGHLIGHTS
+       ========================================================= */
+
+    .highlights {
+      background: var(--cream);
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .highlight-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    .highlight-card .cat {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .highlight-card h4 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
+    }
+
+    .highlight-card p {
+      color: var(--gray);
+      font-size: 0.92rem;
+      margin-bottom: 10px;
+    }
+
+    .highlight-card .price {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 900px) {
+      .highlight-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================================================
+       CATERING FEATURE
+       ========================================================= */
+
+    .catering-feature {
+      background: var(--brown);
+      color: var(--white);
+    }
+
+    .catering-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .catering-grid .section-heading {
+      margin-bottom: 25px;
+    }
+
+    .catering-grid .section-heading p {
+      color: #ded0c4;
+    }
+
+    .catering-list {
+      list-style: none;
+      margin: 25px 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .catering-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .catering-visual {
+      min-height: 440px;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.15),
+          rgba(0,0,0,0.4)
+        ),
+        linear-gradient(135deg, #8c3e22, #d39a58);
+      display: grid;
+      place-items: center;
+      font-size: 5rem;
+      box-shadow: var(--shadow);
+    }
+
+    /* =========================================================
+       BOX LUNCHES
+       ========================================================= */
+
+    .box-lunch {
+      background: var(--light);
+    }
+
+    .lunch-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .lunch-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      text-align: center;
+    }
+
+    .lunch-card .icon {
+      font-size: 2.7rem;
+      margin-bottom: 15px;
+    }
+
+    .lunch-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.5rem;
+      margin-bottom: 7px;
+    }
+
+    .price {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin: 15px 0;
+    }
+
+    /* =========================================================
+       AUDIENCE
+       ========================================================= */
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .audience-card {
+      min-height: 150px;
+      border-radius: var(--radius);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .audience-card span {
+      font-size: 2rem;
+      margin-bottom: auto;
+    }
+
+    .audience-card h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.35rem;
+    }
+
+    /* =========================================================
+       HOW IT WORKS
+       ========================================================= */
+
+    .process {
+      background: var(--white);
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .process-step {
+      position: relative;
+      padding: 25px;
+      border-top: 4px solid var(--gold);
+      background: var(--cream);
+    }
+
+    .number {
+      font-size: 2.3rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .process-step h3 {
+      margin-bottom: 8px;
+    }
+
+    .process-step p {
+      color: var(--gray);
+    }
+
+    /* =========================================================
+       QUOTE FORM
+       ========================================================= */
+
+    .quote-section {
+      background: var(--light);
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .quote-intro h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3rem;
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .quote-intro p {
+      color: var(--gray);
+      margin-bottom: 25px;
+    }
+
+    .contact-box {
+      background: var(--dark);
+      color: var(--white);
+      padding: 25px;
+      border-radius: var(--radius);
+    }
+
+    .contact-box strong {
+      color: var(--gold);
+    }
+
+    form {
+      background: var(--white);
+      padding: 35px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 13px 14px;
+      background: #fffdf9;
+      color: var(--dark);
+      outline: none;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--primary);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    form .btn {
+      margin-top: 20px;
+      border: 0;
+      width: 100%;
+    }
+
+    .form-note {
+      font-size: 0.82rem;
+      color: var(--gray);
+      margin-top: 6px;
+    }
+
+    .form-success {
+      display: none;
+      background: #e9f5ec;
+      border: 1px solid #b7ddc2;
+      color: #1e5c31;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .form-success.visible {
+      display: block;
+    }
+
+    /* =========================================================
+       TESTIMONIAL / BRAND STATEMENT
+       ========================================================= */
+
+    .statement {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .statement blockquote {
+      max-width: 850px;
+      margin: auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.15;
+    }
+
+    .statement p {
+      margin-top: 22px;
+      color: #f0dcd0;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+      background: var(--dark);
+      color: var(--white);
+      padding: 60px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+
+    footer h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+      color: #bcb1aa;
+    }
+
+    footer ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #3b3531;
+      padding-top: 20px;
+      color: #8f8781;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 900px) {
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: var(--cream);
+        padding: 25px;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border);
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .service-grid,
+      .lunch-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .audience-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .catering-grid,
+      .quote-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-inner span:last-child {
+        display: none;
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      nav ul {
+        top: 68px;
+      }
+
+      .hero {
+        min-height: 620px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .service-grid,
+      .lunch-grid,
+      .audience-grid,
+      .process-grid,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      form {
+        padding: 25px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- =======================================================
+       TOP BAR
+       ======================================================= -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Tue–Thu 7am–2pm • Fri–Sat 7am–5pm • Closed Sun–Mon</span>
+      <span>5049 Hathaway St • <a href="tel:12522102233" style="color:inherit;">(252) 210-2233</a></span>
+    </div>
+  </div>
+
+
+  <!-- =======================================================
+       NAVIGATION
+       ======================================================= -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        <span class="logo-mark">CG</span>
+        <span>Charlie's Grill</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mainNav"
+        onclick="toggleMenu()"
+      >
+        ☰
+      </button>
+
+      <nav>
+        <ul id="mainNav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#cateringmenu">Menu</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#quote">Contact</a></li>
+          <li>
+            <a href="#quote" class="nav-cta">Request Catering</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =======================================================
+       HERO
+       ======================================================= -->
+
+  <main id="main-content">
+
+    <section class="hero" id="about">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Charlie's Grill • Battleboro, North Carolina
+        </span>
+
+        <h1>
+          Southern Food.<br />
+          Local Flavor.<br />
+          Catering for Every Occasion.
+        </h1>
+
+        <p>
+          From employee lunches and business meetings to school events,
+          family gatherings and community celebrations, Charlie's Grill
+          brings Southern comfort food to the table.
+        </p>
+
+        <div class="button-group">
+          <a href="#quote" class="btn btn-primary">
+            Request Catering
+          </a>
+
+          <a href="#menu" class="btn btn-outline">
+            Explore Our Food
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+         ===================================================== -->
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="eyebrow">What We Do</span>
+
+          <h2>
+            Good Food for Everyday Meals & Big Occasions
+          </h2>
+
+          <p>
+            Charlie's Grill brings together Southern favorites,
+            prepared meals, box lunches and catering options for
+            individuals, families, businesses and organizations.
+          </p>
+        </div>
+
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <div class="service-image">
+              🍗
+            </div>
+
+            <div class="service-content">
+
+              <h3>Restaurant</h3>
+
+              <p>
+                Enjoy chicken, BBQ, seafood, sandwiches, sides,
+                desserts and drinks at Charlie's Grill.
+              </p>
+
+              <a href="#" class="text-link">
+                View Menu →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">
+              🥡
+            </div>
+
+            <div class="service-content">
+
+              <h3>Business Catering</h3>
+
+              <p>
+                Make employee lunches, meetings and training
+                sessions easier with convenient catering.
+              </p>
+
+              <a href="#quote" class="text-link">
+                Business Catering →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <div class="service-image">
+              🎉
+            </div>
+
+            <div class="service-content">
+
+              <h3>Event Catering</h3>
+
+              <p>
+                Schools, churches, families, nonprofits and
+                community organizations can plan meals around
+                their event.
+              </p>
+
+              <a href="#quote" class="text-link">
+                Plan Your Event →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATERING MENU
+         ===================================================== -->
+
+    <section class="catering-menu" id="cateringmenu">
+
+      <div class="container">
+
+        <div class="section-heading center">
+          <span class="eyebrow">Catering Menu</span>
+
+          <h2>
+            What We Cater
+          </h2>
+
+          <p>
+            These are the items available for catering orders —
+            dinner plates, group-friendly sides, bread, bulk drinks
+            and box lunches. Ask about custom quantities for your event.
+          </p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Catering menu categories">
+          <button class="menu-tab active" onclick="showMenuCat('plates', this)">Dinner Plates</button>
+          <button class="menu-tab" onclick="showMenuCat('boxlunch', this)">Box Lunches</button>
+          <button class="menu-tab" onclick="showMenuCat('sides', this)">Sides</button>
+          <button class="menu-tab" onclick="showMenuCat('bread', this)">Bread</button>
+          <button class="menu-tab" onclick="showMenuCat('drinks', this)">Bulk Drinks</button>
+        </div>
+
+
+        <div class="menu-category active" id="cat-plates">
+          <h3>Dinner Plates</h3>
+          <p class="cat-note">Every plate served with 2 sides & hushpuppies.</p>
+          <div class="menu-items">
+            <div class="menu-item"><span class="name">Chicken Fried — 1 pc</span><span class="price">$9.95</span></div>
+            <div class="menu-item"><span class="name">Chicken Fried — 2 pc</span><span class="price">$13.95</span></div>
+            <div class="menu-item"><span class="name">Catfish — 1 pc</span><span class="price">$10.95</span></div>
+            <div class="menu-item"><span class="name">Catfish — 2 pc</span><span class="price">$13.95</span></div>
+            <div class="menu-item"><span class="name">Fried Pork Chop — 1 pc</span><span class="price">$10.95</span></div>
+            <div class="menu-item"><span class="name">Fried Pork Chop — 2 pc</span><span class="price">$15.95</span></div>
+            <div class="menu-item"><span class="name">Shrimp — 10 pc</span><span class="price">$10.95</span></div>
+            <div class="menu-item"><span class="name">Shrimp — 20 pc</span><span class="price">$16.95</span></div>
+            <div class="menu-item"><span class="name">Shrimp & Catfish Combo</span><span class="price">$16.95</span></div>
+            <div class="menu-item"><span class="name">Chef Special</span><span class="price">$12.95</span></div>
+          </div>
+        </div>
+
+
+        <div class="menu-category" id="cat-boxlunch">
+          <h3>Box Lunches</h3>
+          <p class="cat-note">Each box includes a side, chips, a cookie & a 12oz drink — ideal for meetings and employee lunches.</p>
+          <div class="menu-items">
+            <div class="menu-item"><span class="name">Chicken Sandwich Box</span><span class="price">$14</span></div>
+            <div class="menu-item"><span class="name">Turkey Sandwich Box</span><span class="price">$14</span></div>
+            <div class="menu-item"><span class="name">Ham Hoagie Box</span><span class="price">$14</span></div>
+          </div>
+        </div>
+
+
+        <div class="menu-category" id="cat-sides">
+          <h3>Sides</h3>
+          <p class="cat-note">Priced per 4oz serving unless noted — great for building out a group spread.</p>
+          <div class="menu-items">
+            <div class="menu-item"><span class="name">Mac & Cheese</span><span class="price">$4</span></div>
+            <div class="menu-item"><span class="name">Green Beans</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Yams</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Potato Salad</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Cole Slaw</span><span class="price">$2.50</span></div>
+            <div class="menu-item"><span class="name">Rice</span><span class="price">$2</span></div>
+            <div class="menu-item"><span class="name">French Fries (1 serving)</span><span class="price">$2.99</span></div>
+            <div class="menu-item"><span class="name">Onion Rings (6 pc)</span><span class="price">$3.50</span></div>
+            <div class="menu-item"><span class="name">Gravy (4 oz)</span><span class="price">$1</span></div>
+            <div class="menu-item"><span class="name">Garden Salad — Small</span><span class="price">$9</span></div>
+            <div class="menu-item"><span class="name">Garden Salad — Large</span><span class="price">$12.95</span></div>
+          </div>
+        </div>
+
+
+        <div class="menu-category" id="cat-bread">
+          <h3>Bread</h3>
+          <p class="cat-note">Add-ons for rounding out any catering order.</p>
+          <div class="menu-items">
+            <div class="menu-item"><span class="name">Hushpuppies (1/2 dozen)</span><span class="price">$1.89</span></div>
+            <div class="menu-item"><span class="name">Hushpuppies (dozen)</span><span class="price">$2.99</span></div>
+            <div class="menu-item"><span class="name">Yeast Roll</span><span class="price">$0.25</span></div>
+            <div class="menu-item"><span class="name">White Bread</span><span class="price">$0.25</span></div>
+            <div class="menu-item"><span class="name">Bun</span><span class="price">$0.25</span></div>
+            <div class="menu-item"><span class="name">Hoagie Roll</span><span class="price">$0.50</span></div>
+          </div>
+        </div>
+
+
+        <div class="menu-category" id="cat-drinks">
+          <h3>Bulk Drinks</h3>
+          <p class="cat-note">Sized for groups — great for offices, schools and events.</p>
+          <div class="menu-items">
+            <div class="menu-item"><span class="name">Iced Tea — 1/2 Gallon</span><span class="price">$4.99</span></div>
+            <div class="menu-item"><span class="name">Iced Tea — Gallon</span><span class="price">$6.99</span></div>
+            <div class="menu-item"><span class="name">Lemonade — 1/2 Gallon</span><span class="price">$5.99</span></div>
+            <div class="menu-item"><span class="name">Lemonade — Gallon</span><span class="price">$7.99</span></div>
+          </div>
+        </div>
+
+
+        <div style="text-align:center; margin-top:40px;">
+          <a href="#quote" class="btn btn-primary">
+            Get My Catering Quote
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CATERING FEATURE
+         ===================================================== -->
+
+    <section class="catering-feature" id="catering">
+
+      <div class="container catering-grid">
+
+        <div>
+
+          <div class="section-heading">
+
+            <span class="eyebrow">
+              Catering
+            </span>
+
+            <h2>
+              Feed Your Team. Serve Your Guests. Make It Easy.
+            </h2>
+
+            <p>
+              Whether you are planning an employee lunch,
+              business meeting, school event, church gathering
+              or community celebration, Charlie's Grill can
+              help you put Southern food on the table.
+            </p>
+
+          </div>
+
+
+          <ul class="catering-list">
+
+            <li>Corporate & employee meals</li>
+            <li>Business meetings & training</li>
+            <li>School events & fundraisers</li>
+            <li>Church & community gatherings</li>
+            <li>Family celebrations & reunions</li>
+            <li>BBQ and large-event catering</li>
+
+          </ul>
+
+
+          <a href="#quote" class="btn btn-primary">
+            Get My Catering Quote
+          </a>
+
+        </div>
+
+
+        <div class="catering-visual">
+          🍽️
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOX LUNCHES
+         ===================================================== -->
+
+    <section class="box-lunch">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <span class="eyebrow">
+            Business Lunch Program
+          </span>
+
+          <h2>
+            Feed Your Team Without Slowing Down the Workday.
+          </h2>
+
+          <p>
+            Charlie's Grill already offers individual box lunches
+            that can serve as the foundation for a convenient
+            business catering program.
+          </p>
+
+        </div>
+
+
+        <div class="lunch-grid">
+
+          <article class="lunch-card">
+
+            <div class="icon">🍗</div>
+
+            <h3>Chicken Sandwich Box</h3>
+
+            <p>
+              Chicken sandwich on fresh white bread with one
+              side, chips, a fresh-baked cookie & a 12oz drink.
+            </p>
+
+            <div class="price">
+              $14
+            </div>
+
+          </article>
+
+
+          <article class="lunch-card">
+
+            <div class="icon">🦃</div>
+
+            <h3>Turkey Sandwich Box</h3>
+
+            <p>
+              Turkey sandwich on a soft hamburger bun with one
+              side, chips, a cookie & a 12oz drink.
+            </p>
+
+            <div class="price">
+              $14
+            </div>
+
+          </article>
+
+
+          <article class="lunch-card">
+
+            <div class="icon">🥪</div>
+
+            <h3>Ham Hoagie Box</h3>
+
+            <p>
+              Ham hoagie with one side, chips, a chewy
+              cookie & a 12oz drink.
+            </p>
+
+            <div class="price">
+              $14
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div style="text-align:center; margin-top:35px;">
+          <a href="#quote" class="btn btn-primary">
+            Order Box Lunches
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHO WE SERVE
+         ===================================================== -->
+
+    <section id="community">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <span class="eyebrow">
+            Who We Serve
+          </span>
+
+          <h2>
+            Charlie's Grill Can Be Your Local Food Partner.
+          </h2>
+
+          <p>
+            The catering program is designed around the occasions
+            that bring people together.
+          </p>
+
+        </div>
+
+
+        <div class="audience-grid">
+
+          <div class="audience-card">
+            <span>🏢</span>
+            <h3>Businesses</h3>
+          </div>
+
+          <div class="audience-card">
+            <span>🏫</span>
+            <h3>Schools</h3>
+          </div>
+
+          <div class="audience-card">
+            <span>⛪</span>
+            <h3>Churches</h3>
+          </div>
+
+          <div class="audience-card">
+            <span>🎉</span>
+            <h3>Community Events</h3>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROCESS
+         ===================================================== -->
+
+    <section class="process">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <span class="eyebrow">
+            Simple Catering
+          </span>
+
+          <h2>
+            From Event Idea to Full Table.
+          </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-step">
+
+            <div class="number">01</div>
+
+            <h3>Tell Us About It</h3>
+
+            <p>
+              Give us your date, location, guest count and
+              event details.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">02</div>
+
+            <h3>Choose Your Food</h3>
+
+            <p>
+              Select box lunches, BBQ, chicken, sides,
+              beverages or custom options.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">03</div>
+
+            <h3>Receive Your Quote</h3>
+
+            <p>
+              Charlie's Grill reviews the request and
+              prepares the appropriate catering quote.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">04</div>
+
+            <h3>Enjoy the Event</h3>
+
+            <p>
+              Your food is prepared for your confirmed
+              pickup, delivery or service arrangement.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         QUOTE FORM
+         ===================================================== -->
+
+    <section class="quote-section" id="quote">
+
+      <div class="container quote-grid">
+
+        <div class="quote-intro">
+
+          <span class="eyebrow">
+            Catering Request
+          </span>
+
+          <h2>
+            Planning an Event?
+            Let's Talk Food.
+          </h2>
+
+          <p>
+            Tell Charlie's Grill what you're planning and
+            we'll use the information to build the right
+            catering solution for your group.
+          </p>
+
+
+          <div class="contact-box">
+
+            <p>
+              <strong>Charlie's Grill</strong>
+            </p>
+
+            <p>
+              5049 Hathaway St<br />
+              Battleboro, NC 27809
+            </p>
+
+            <br />
+
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:12522102233" style="color:inherit;">(252) 210-2233</a>
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:henchar06@gmail.com" style="color:inherit;">henchar06@gmail.com</a>
+            </p>
+
+            <br />
+
+            <p><strong>Hours</strong></p>
+            <p>Tue – Thu: 7am – 2pm</p>
+            <p>Fri – Sat: 7am – 5pm</p>
+            <p>Dinner (Fri – Sat): 2pm – 5pm</p>
+            <p>Closed Sunday & Monday</p>
+
+          </div>
+
+        </div>
+
+
+        <form
+          name="catering-quote"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onsubmit="submitQuote(event)"
+        >
+
+          <input type="hidden" name="form-name" value="catering-quote" />
+
+          <p style="position:absolute; left:-9999px;" aria-hidden="true">
+            <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            Thanks — your request is on its way to Charlie's Grill! If your email app opens, just hit send to finish. Questions? Email henchar06@gmail.com directly.
+          </div>
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="name">
+                Name *
+              </label>
+
+              <input
+                id="name"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="organization">
+                Organization
+              </label>
+
+              <input
+                id="organization"
+                type="text"
+                placeholder="Company / school / church"
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="email">
+                Email *
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+              <label for="phone">
+                Phone *
+              </label>
+
+              <input
+                id="phone"
+                type="tel"
+                placeholder="(555) 555-5555"
+                required
+              />
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="eventType">
+                Event Type
+              </label>
+
+              <select id="eventType" required>
+
+                <option value="" disabled selected>
+                  Select an event
+                </option>
+
+                <option>
+                  Business / Employee Lunch
+                </option>
+
+                <option>
+                  Business Meeting
+                </option>
+
+                <option>
+                  School Event
+                </option>
+
+                <option>
+                  Church Event
+                </option>
+
+                <option>
+                  Community Event
+                </option>
+
+                <option>
+                  Family Event
+                </option>
+
+                <option>
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="guests">
+                Number of Guests
+              </label>
+
+              <input
+                id="guests"
+                type="number"
+                min="1"
+                max="1000"
+                placeholder="35"
+              />
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="date">
+                Event Date
+              </label>
+
+              <input
+                id="date"
+                type="date"
+              />
+
+              <span class="form-note">Please allow at least 48 hours' notice.</span>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="service">
+                Service
+              </label>
+
+              <select id="service">
+
+                <option>
+                  Pickup
+                </option>
+
+                <option>
+                  Delivery
+                </option>
+
+                <option>
+                  Delivery + Setup
+                </option>
+
+                <option>
+                  Full-Service Catering
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <label for="message">
+                Tell Us About Your Event
+              </label>
+
+              <textarea
+                id="message"
+                placeholder="Food preferences, budget, location, dietary needs, etc."
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Get My Catering Quote
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BRAND STATEMENT
+         ===================================================== -->
+
+    <section class="statement">
+
+      <div class="container">
+
+        <blockquote>
+          “Your meeting. Your family. Your community.
+          Our food.”
+        </blockquote>
+
+        <p>
+          Charlie's Grill — serving Battleboro and the
+          surrounding community.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =======================================================
+       FOOTER
+       ======================================================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="logo" style="color:white; margin-bottom:15px;">
+            <span class="logo-mark">CG</span>
+            Charlie's Grill
+          </div>
+
+          <p>
+            Southern food, local flavor and catering
+            for every occasion.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Explore</h3>
+
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cateringmenu">Menu</a></li>
+            <li><a href="#catering">Catering</a></li>
+            <li><a href="#community">Community</a></li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3>Catering</h3>
+
+          <ul>
+            <li><a href="#quote">Business Catering</a></li>
+            <li><a href="#quote">Box Lunches</a></li>
+            <li><a href="#quote">School Events</a></li>
+            <li><a href="#quote">Community Events</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Charlie's Grill. Client preview.
+        </span>
+
+        <span>
+          Website concept by Infrared Reactive.
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =======================================================
+       JAVASCRIPT
+       ======================================================= -->
+
+  <script>
+
+    function toggleMenu() {
+      const nav = document.getElementById("mainNav");
+      const btn = document.querySelector(".menu-toggle");
+      const isOpen = nav.classList.toggle("active");
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+
+
+    function showMenuCat(id, btn) {
+      document.querySelectorAll(".menu-category").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".menu-tab").forEach(el => el.classList.remove("active"));
+      document.getElementById("cat-" + id).classList.add("active");
+      btn.classList.add("active");
+    }
+
+
+    function encodeFormData(data) {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+    }
+
+
+    function submitQuote(event) {
+
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const organization = document.getElementById("organization").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const eventType = document.getElementById("eventType").value;
+      const guests = document.getElementById("guests").value;
+      const date = document.getElementById("date").value;
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value;
+
+      const successEl = document.getElementById("formSuccess");
+
+      function showSuccess() {
+        successEl.classList.add("visible");
+        successEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+
+      function fallbackToMailto() {
+        const bodyLines = [
+          "New catering inquiry from the website:",
+          "",
+          "Name: " + name,
+          "Organization: " + (organization || "—"),
+          "Email: " + email,
+          "Phone: " + phone,
+          "Event type: " + (eventType || "—"),
+          "Guests: " + (guests || "—"),
+          "Event date: " + (date || "—"),
+          "Service: " + service,
+          "",
+          "Details:",
+          message || "—"
+        ];
+
+        const subject = encodeURIComponent("Catering Inquiry — " + name + (eventType ? " (" + eventType + ")" : ""));
+        const body = encodeURIComponent(bodyLines.join("\n"));
+        window.location.href = "mailto:henchar06@gmail.com?subject=" + subject + "&body=" + body;
+      }
+
+      // Try Netlify Forms first (only works once this site is deployed
+      // on Netlify — the AJAX POST below will fail in this Claude preview
+      // and in that case we fall back to mailto automatically).
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encodeFormData({
+          "form-name": "catering-quote",
+          "name": name,
+          "organization": organization,
+          "email": email,
+          "phone": phone,
+          "eventType": eventType,
+          "guests": guests,
+          "date": date,
+          "service": service,
+          "message": message
+        })
+      })
+        .then(() => {
+          showSuccess();
+        })
+        .catch(() => {
+          showSuccess();
+          fallbackToMailto();
+        });
+
+      // NOTE: For Netlify Forms to actually capture submissions, this
+      // page must be deployed on Netlify with the form's data-netlify
+      // attribute intact. Once deployed, view submissions under the
+      // site's Forms tab, and set up an email notification to
+      // henchar06@gmail.com under Forms > Notifications.
+
+    }
+
+
+    // Set minimum selectable date to today so past dates can't be chosen
+    document.getElementById("date").min = new Date().toISOString().split("T")[0];
+
+
+    // Close mobile menu after selecting a link
+
+    document
+      .querySelectorAll("#mainNav a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          const nav = document.getElementById("mainNav");
+          nav.classList.remove("active");
+          document.querySelector(".menu-toggle").setAttribute("aria-expanded", "false");
+
+        });
+
+      });
+
+  </script>
+
+</body>
+</html>
